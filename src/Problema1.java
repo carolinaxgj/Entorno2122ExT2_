@@ -6,9 +6,9 @@ public class Problema1 {
             if (num % 3 == 0) {
                 multiplode3(num);
             } else if (num % 5 == 0) {
-                System.out.println("Buzz");
+                System.out.print("Buzz");
             } else {
-                System.out.println(num);
+                System.out.print(num);
             }
 
         }
@@ -17,7 +17,7 @@ public class Problema1 {
 
     static String multiplode3(int num) {
         if (num % 3 == 0) {
-            System.out.println("Fizz");
+            System.out.print("Fizz");
         }
         return null;
     }
@@ -26,7 +26,11 @@ public class Problema1 {
         cadenaNumeros();
     }
 
-    public boolean multiplo ( int num){
+    public boolean multiplo3 ( int num){
         return num % 3 ==0;
+    }
+
+    public boolean multiplo5 (int num){
+        return  num % 5 ==0;
     }
 }
