@@ -1,7 +1,7 @@
 import java.util.Scanner;
 
 public class Problema2 {
-    static int cadenaNumeros(int num1, int num2) {
+    static boolean cadenaNumeros(int num1, int num2) {
 
         for (int i = num1; i < num2; i++) {
             num1 = num1 + 1;
@@ -14,7 +14,7 @@ public class Problema2 {
             }
 
         }
-        return 0;
+        return true;
     }
 
     static void multiplode3(int num) {

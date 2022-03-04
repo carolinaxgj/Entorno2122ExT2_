@@ -7,7 +7,7 @@ public class TestProblema2 {
         Problema1 problema1 = new Problema1();
 
         boolean expected = true;
-        boolean actual = problema1.multiplo3(problema1.cadenaNumeros());
+        boolean actual = problema1.multiplode3(problema1.cadenaNumeros());
 
         Assertions.assertEquals(actual, expected);
     }
@@ -17,7 +17,7 @@ public class TestProblema2 {
         Problema1 problema1 = new Problema1();
 
         boolean expected = false;
-        boolean actual = problema1.multiplo5(problema1.cadenaNumeros());
+        boolean actual = problema1.multiplode5(problema1.cadenaNumeros());
 
         Assertions.assertEquals(actual, expected);
     }
@@ -30,10 +30,12 @@ public class TestProblema2 {
         int num1 = 4;
         int num2 = 10;
 
-        int expected = num1;
-        int expected2 = num2;
+        problema2.cadenaNumeros(num1, num2);
 
-        //Assertions.assertEquals
+        boolean expected = true;
+        boolean actual = problema2.cadenaNumeros(num1, num2);
+
+        Assertions.assertEquals(expected, actual);
     }
 
 }

@@ -7,7 +7,7 @@ public class TestProblema1 {
         Problema1 problema1 = new Problema1();
 
         boolean expected = true;
-        boolean actual = problema1.multiplo3(problema1.cadenaNumeros());
+        boolean actual = problema1.multiplode3(problema1.cadenaNumeros());
 
         Assertions.assertEquals(actual, expected);
     }
@@ -16,8 +16,8 @@ public class TestProblema1 {
     public void es_multiplo_de_5(){
         Problema1 problema1 = new Problema1();
 
-        boolean expected = false;
-        boolean actual = problema1.multiplo5(problema1.cadenaNumeros());
+        boolean expected = true;
+        boolean actual = problema1.multiplode5(problema1.cadenaNumeros());
 
         Assertions.assertEquals(actual, expected);
     }

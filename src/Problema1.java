@@ -15,22 +15,23 @@ public class Problema1 {
         return num;
     }
 
-    static String multiplode3(int num) {
+    static boolean multiplode3(int num) {
         if (num % 3 == 0) {
             System.out.print("Fizz");
         }
-        return null;
+        return true;
+    }
+
+    static boolean multiplode5(int num) {
+        if (num % 5 == 0) {
+            System.out.print("Buzz");
+        }
+        return true;
     }
 
     public static void main(String[] args) {
         cadenaNumeros();
     }
 
-    public boolean multiplo3 ( int num){
-        return num % 3 ==0;
-    }
 
-    public boolean multiplo5 (int num){
-        return  num % 5 ==0;
-    }
 }
