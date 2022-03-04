@@ -1,7 +1,7 @@
 import java.util.Scanner;
 
 public class Problema2 {
-    static void cadenaNumeros(int num1, int num2) {
+    static int cadenaNumeros(int num1, int num2) {
 
         for (int i = num1; i < num2; i++) {
             num1 = num1 + 1;
@@ -14,27 +14,32 @@ public class Problema2 {
             }
 
         }
+        return 0;
     }
 
     static void multiplode3(int num) {
         if (num % 3 == 0) {
-            System.out.println("Fizz");
+            System.out.print("Fizz");
         }
 
     }
 
     static void multiplode5(int num) {
         if (num % 5 == 0) {
-            System.out.println("Buzz");
+            System.out.print("Buzz");
         }
     }
 
-    public static void main(String[] args) {
-        System.out.println("Introduce un número");
+    static int pideNum (){
+        System.out.println("Introduce un numero");
         Scanner sc = new Scanner(System.in);
-        int num1 = sc.nextInt();
-        System.out.println("Introduce otro número");
-        int num2 = sc.nextInt();
+        int num = sc.nextInt();
+        return num;
+
+    }
+    public static void main(String[] args) {
+        int num1 = pideNum();
+        int num2 = pideNum();
         cadenaNumeros(num1, num2);
     }
 }

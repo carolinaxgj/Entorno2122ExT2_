@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class Problema2 {
+public class Problema3 {
     static int cadenaNumeros(int num1, int num2) {
 
         for (int i = num1; i < num2; i++) {
@@ -9,7 +9,13 @@ public class Problema2 {
                 multiplode3(num1);
             } else if (num1 % 5 == 0) {
                multiplode5(num1);
-            } else {
+            } else if (num1 % 7 == 0){
+                multiplode7(num1);
+            } else if (num1 % 11 == 0){
+                multiplode11(num1);
+            }
+            else if ()
+            else {
                 System.out.println(num1);
             }
 
@@ -17,6 +23,18 @@ public class Problema2 {
         return 0;
     }
 
+    static void multiplode7(int num) {
+        if (num % 7 == 0) {
+            System.out.print("Foo");
+        }
+
+    }
+    static void multiplode11(int num) {
+        if (num % 11 == 0) {
+            System.out.print("Boo");
+        }
+
+    }
     static void multiplode3(int num) {
         if (num % 3 == 0) {
             System.out.print("Fizz");

@@ -1,7 +1,7 @@
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
-public class TestProblema2 {
+public class TestProblema3 {
     @Test
     public void es_multiplo_de_3(){
         Problema1 problema1 = new Problema1();
@@ -33,7 +33,6 @@ public class TestProblema2 {
         int expected = num1;
         int expected2 = num2;
 
-        Assertions.assertEquals
     }
 
 }
