@@ -1,9 +1,9 @@
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
-public class TestProblema1 {
+public class TestProblema2 {
     @Test
-    private void es_multiplo_de_3(){
+    public void es_multiplo_de_3(){
         Problema1 problema1 = new Problema1();
 
         int num = (3);
@@ -15,7 +15,16 @@ public class TestProblema1 {
 
 
     }
+    @Test
+    public void cualquierNumero (){
+        Problema2 problema2 = new Problema2();
 
+        problema2.cadenaNumeros(3,20);
+
+
+
+
+    }
 }
 
 
